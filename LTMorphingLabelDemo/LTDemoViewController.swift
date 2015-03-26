@@ -39,7 +39,7 @@ class LTDemoViewController: UIViewController, LTMorphingLabelDelegate {
     }
     
     @IBAction func segmentChanged(sender: AnyObject) {
-        let seg = sender as UISegmentedControl
+        let seg = sender as! UISegmentedControl
         switch seg.selectedSegmentIndex {
         case 1:
             self.label.morphingEffect = .Evaporate
